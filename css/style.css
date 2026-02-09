@@ -1,3 +1,4 @@
+/* The boy background and default font */
 body {
   background-color: #ee9fdd; 
   font-family: cursive;      
@@ -6,15 +7,14 @@ body {
   padding: 0;
 }
 
-
+/* The color of the headers */
 #main_header, #collection_header {
   background-color: rgb(240, 199, 228); 
   text-align: center;
   color: #008000; 
   padding: 20px 10px;
 }
-
-
+/* size of headers h1 and h2 */
 #main_header h1, #collection_header h1 {
   font-size: 48px; 
   margin: 0;
@@ -34,6 +34,7 @@ body {
   margin-top: 20px;
 }
 
+/* Font of the sections */
 p, ul, ol, h3, h4 {
   font-family: cursive;
   font-size: 18px; 
@@ -44,7 +45,7 @@ img {
   border-radius: 9px;
 }
 
-
+/* making the images horizontal */
 #flowers_images {
   display: flex;
   justify-content: space-around; 
