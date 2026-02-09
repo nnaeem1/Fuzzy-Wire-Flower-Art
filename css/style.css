@@ -1,24 +1,59 @@
-header {
-  background-color: rgb(232, 127, 6);
-  text-align: center;
-}
-
-h3 {
-  font-size: 30px;
-  text-align: center;
-}
-
 body {
-  background-color: #f2f4f7;
+  background-color: #ee9fdd; 
+  font-family: cursive;      
+  font-size: 18px;          
+  margin: 0;
+  padding: 0;
 }
 
-* {
-  font-family: sans-serif;
+
+#main_header, #collection_header {
+  background-color: rgb(240, 199, 228); 
+  text-align: center;
+  color: #008000; 
+  padding: 20px 10px;
+}
+
+
+#main_header h1, #collection_header h1 {
+  font-size: 48px; 
+  margin: 0;
+}
+
+#main_header h2, #collection_header h2 {
+  font-size: 32px; 
+  margin: 5px 0 0 0;
+}
+
+#main_content, #collection_content {
+  padding: 10px;
+}
+
+#page_footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p, ul, ol, h3, h4 {
+  font-family: cursive;
+  font-size: 18px; 
 }
 
 img {
-  width: 50%;
-  border-radius: 8px;
-  display: block;
-  margin: auto;
+  width: 20%;
+  border-radius: 9px;
+}
+
+
+#flowers_images {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  margin-top: 10px;
+}
+
+.subheader, .subheader2, .subheader3 {
+  font-weight: bold;
+  font-size: 22px; 
+  color: #008000; 
 }
