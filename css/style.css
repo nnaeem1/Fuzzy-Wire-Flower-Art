@@ -1,6 +1,6 @@
 /* The boy background and default font */
 body {
-  background-color: #ee9fdd; 
+  background-color: #0d434d; 
   font-family: cursive;      
   font-size: 18px;          
   margin: 0;
@@ -9,9 +9,9 @@ body {
 
 /* The color of the headers */
 #main_header, #collection_header {
-  background-color: rgb(240, 199, 228); 
+  background-color: #093a43; 
   text-align: center;
-  color: #008000; 
+  color: #ffffff; 
   padding: 20px 10px;
 }
 /* size of headers h1 and h2 */
@@ -20,7 +20,7 @@ body {
   margin: 0;
 }
 
-#main_header h2, #collection_header h2 {
+#main_header h2, #collection_header {
   font-size: 32px; 
   margin: 5px 0 0 0;
 }
@@ -37,7 +37,12 @@ body {
 /* Font of the sections */
 p, ul, ol, h3, h4 {
   font-family: cursive;
-  font-size: 18px; 
+  font-size: 18px;
+  color: #D1E4E6;
+}
+
+h3 {
+  text-align: center;
 }
 
 img {
@@ -45,16 +50,45 @@ img {
   border-radius: 9px;
 }
 
-/* making the images horizontal */
-#flowers_images {
-  display: flex;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
-  margin-top: 10px;
-}
-
-.subheader, .subheader2, .subheader3 {
+h2 {
   font-weight: bold;
   font-size: 22px; 
-  color: #008000; 
+  color: #ffffff; 
+}
+
+@media (max-width: 600px) {
+  .side_by_side {
+    flex-direction: column;
+  }
+}
+
+.side_by_side {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+#materials, #steps, #content_summary, #flower_list {
+  border: 2px solid #D1E4E6;
+  background-color: #093a43;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.side_by_side section {
+  flex: 1;
+}
+
+
+
+.image_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+}
+
+#page_footer a {
+  color: #a8d8df;
+  font-size: 20px;
 }
