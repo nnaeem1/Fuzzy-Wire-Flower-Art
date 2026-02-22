@@ -14,24 +14,16 @@ body {
   color: #ffffff; 
   padding: 20px 10px;
 }
+
 /* size of headers h1 and h2 */
 #main_header h1, #collection_header h1 {
   font-size: 48px; 
   margin: 0;
 }
 
-#main_header h2, #collection_header {
+#main_header h2 {
   font-size: 32px; 
   margin: 5px 0 0 0;
-}
-
-#main_content, #collection_content {
-  padding: 10px;
-}
-
-#page_footer {
-  text-align: center;
-  margin-top: 20px;
 }
 
 /* Font of the sections */
@@ -42,34 +34,23 @@ p, ul, ol, h2 {
 }
 
 h2 {
-  text-align: center;
-}
-
-img {
-  width: 20%;
-  border-radius: 9px;
-}
-
-h2 {
   font-weight: bold;
   font-size: 22px; 
   color: #ffffff; 
 }
 
-@media (max-width: 600px) {
-  .side_by_side {
-    flex-direction: column;
-  }
-}
-body {
-    font-size: 16px;
-}
-.side_by_side {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
+img {
+  border-radius: 9px;
 }
 
+/* This adjusts layout for smaller screens like phones */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Custom box styling for materials and steps sections */
 #materials, #steps, #content_summary, #flower_list {
   border: 2px solid #D1E4E6;
   background-color: #093a43;
@@ -77,19 +58,14 @@ body {
   padding: 15px;
 }
 
-.side_by_side section {
-  flex: 1;
-}
-
-.image_container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 10px;
-  flex-wrap: nowrap;
-}
-
+/* Custom footer link styling - overrides Bootstrap button color to match my theme */
 #page_footer a {
-  color: #a8d8df;
-  font-size: 20px;
+  background-color: #0d434d;
+  border-color: #D1E4E6;
 }
+
+#page_footer a:hover {
+  background-color: #093a43;
+  border-color: #ffffff;
+}
+
