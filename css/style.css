@@ -1,7 +1,7 @@
 /* The background and default font */
 body {
   background-color: #0d434d; 
-  font-family: cursive;      
+  font-family:'Comic Sans MS', 'Trebuchet MS', 'Lucida Grande', sans-serif;      
   font-size: 18px;          
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
 
 /* Font of the sections */
 p, ul, ol, h2 {
-  font-family: cursive;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', 'Lucida Grande', sans-serif;
   font-size: 18px;
   color: #D1E4E6;
 }
